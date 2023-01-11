@@ -8,6 +8,11 @@ from telebot import types
 # Объявление глобальных переменных
 assetId = "8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS"
 yourAddress = "3PEZUy4L4BQgn9B7jpQ7sQm4j9RgsqsW2RH"
+we = ccxt.wavesexchange({
+    'apiKey': 'PUBLIC KEY',
+    'secret': 'PRIVATE KEY',
+    'enableRateLimit': True,
+})
 bot = telebot.TeleBot('BOT API')
 amount_in = 0
 price_in = 0
